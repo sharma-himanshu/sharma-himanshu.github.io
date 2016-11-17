@@ -11,10 +11,18 @@
         object-fit: contain;
       }
 
+      #container {
+          width: 100%; /*can be in percentage also.*/
+          height: auto;
+          margin: 0 auto;
+          padding: 10px;
+          position: relative;
+      }
       .FOOD-IS-OUR-COMMON-G 
       {
         width: 306px;
         height: 19px;
+        line-height: 19px;
         font-family: Lato;
         font-size: 16px;
         font-weight: bold;
@@ -22,6 +30,7 @@
         font-stretch: normal;
         letter-spacing: 1.8px;
         text-align: center;
+        vertical-align: middle;        
         color: #ffffff;
       }
       .AppstoreButton 
@@ -30,18 +39,28 @@
         height: 40px;
         margin-left: auto;
         margin-right: auto;        
-        object-fit: contain;
+      }
+      footer {
+        position: absolute;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        background-color: #e4b300;
+        vertical-align: middle;        
+        color: white;
+        text-align: center;
+        bottom: 0;
       }
 
-    div { width: 100%; height: 100%; }
     </style>
   </head>
   <body bgcolor="#f8ca00">
-    <div>
-      <img class="WC-Logo-Mobile"  src="mobileLogo.png"/>
+    <div id="container">
+      <img class="WC-Logo-Mobile" src="mobileLogo.png"/>
       <h1 class="FOOD-IS-OUR-COMMON-G"> FOOD IS OUR COMMON GROUND </h1>
       <img class="AppstoreButton" src="appstoreButton.png"/>
-    </div>div>
+    </div>
+    <footer>Copyright © 2016 WhatsCookin. All Rights Reserved.</footer>
   </body>
 </html>
 
