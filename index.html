@@ -57,7 +57,7 @@
       }
       .emailField
       {
-        width: 250px;
+        width: 210px;
         height: 40px;
         font-family: Lato;
         font-size: 16px;
@@ -73,7 +73,7 @@
       .formDiv
       {
         margin: 80 auto auto auto;
-        width: 410px;
+        width: 365px;
       }
 
       ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
@@ -112,10 +112,10 @@
         font-family: Lato;
         font-weight: medium;
         font-size: 10px;
-        height: 40px;
-        line-height: 40px;
-        background-color: #e4b300;
-        vertical-align: middle;        
+        height: 30px;
+        line-height: 30px;
+/*        background-color: #e4b300;
+*/        vertical-align: middle;        
         color: #111d29;
         text-align: center;
         bottom: 0;
@@ -135,7 +135,7 @@
         </div>
         <div class="formDiv">
         <form method="POST" action="http://formspree.io/himanshu.sharma.814@my.csun.edu">
-          <input class="emailField" type="email" name="_replyto" placeholder="enter email address" autofocus="autofocus">
+          <input class="emailField" type="email" name="_replyto" placeholder="enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'enter your text'" />
           <input class="getBetaButton" type="submit" value="GET BETA!">
           <input type="hidden" name="_next" value="/thankYou.html" />
           </form>
