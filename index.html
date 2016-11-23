@@ -120,7 +120,14 @@
         text-align: center;
         bottom: 0;
       }
-
+      p
+      {
+        font-family: Lato;
+        font-size: 15px;
+        color: #111d29;
+        margin: 80 auto auto auto;
+        width: 280px;
+      }
     </style>
   </head>
   <body bgcolor="#F8CA00">
@@ -133,16 +140,21 @@
         <div class="centerAppStore">
           <img class="AppstoreButton" src="appstoreButton.png"/>
         </div>
-        <div class="formDiv">
-        <form method="POST" action="http://formspree.io/hi@whatscookin.me">
-          <input class="emailField" type="email" name="_replyto" placeholder="enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'enter email address'" />
-          <input class="getBetaButton" type="submit" value="GET BETA!">
-          <input type="hidden" name="_next" value="/thankYou.html" />
+        <div class="formDiv" id="form">
+          <form id="getBetaForm">
+            <input class="emailField" type="email" id="email" placeholder="enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'enter email address'" />
+            <input class="getBetaButton" type="submit" value="GET BETA!">
+            <!-- <input type="hidden" name="_next" value="/thankYou.html" /> -->
           </form>
+        </div>
+        <div id="thankyouBlock" style="display:none">
+          <p>Thank you for signing up for our beta. <br>You'll be the first to know when we go live.<br><br>Thanks for your support :)</p>
         </div>
       </div>
     </div>
     <footer>Copyright © 2016 WhatsCookin. All rights reserved.</footer>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="validate.js"></script>
   </body>
 </html>
 
