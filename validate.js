@@ -7,7 +7,7 @@ $(document).ready(function() {
         var email = $('#email').val();
         if (email.trim().length > 0) {
             $.ajax({
-                url:'https://formspree.io/himanshu.sharma.814@my.csun.edu',
+                url:'https://formspree.io/hi@whatscookin.me',
                 method:'POST',
                 data:{
                     name:"",
